@@ -18,10 +18,10 @@ ad_gentes_URL="http://www.vatican.va/archive/hist_councils/ii_vatican_council/do
 optatam_totius_URL="http://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651028_optatam-totius"
 
 function create_db {
-    document="database"
-    [[ -f $document ]] && rm -f $document
     pwd=`pwd`
     cd docs
+    document="database"
+    [[ -f $document ]] && rm -f $document
     for lang in cs en lt; do
         # Download Consitutions
         for doc in dei_verbum lumen_gentium sacrosanctum_concilium gaudium_et_spes; do
