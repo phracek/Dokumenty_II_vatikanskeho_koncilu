@@ -32,6 +32,7 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.
         //implementing onClickListener
         itemView.setOnClickListener(this);
         name = (TextView)itemView.findViewById(R.id.documentView);
+        name.setTextSize(MainActivity.SIZE);
         c = context;
     }
 

@@ -25,6 +25,7 @@ import java.util.concurrent.RecursiveAction;
 
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "phracek.dokumenty_ii_vatikanskeho_koncilu.MESSAGE";
+    public static final int SIZE = 30;
     public static DocumentDb docuDb = new DocumentDb();
 
     @Override
@@ -93,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
             TextView v = (TextView) LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.activity_document, parent, false);
             // set the view's size, margins, paddings and layout parameters
+            v.setTextSize(MainActivity.SIZE);
             ViewHolder vh = new ViewHolder(v);
             return vh;
         }
