@@ -16,6 +16,13 @@ dignitatis_humanae_URL="http://www.vatican.va/archive/hist_councils/ii_vatican_c
 # Decrees
 ad_gentes_URL="http://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651207_ad-gentes"
 optatam_totius_URL="http://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651028_optatam-totius"
+presbyterorum_ordinis_URL="http://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651207_presbyterorum-ordinis"
+apostolicam_actuositatem_URL="http://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651118_apostolicam-actuositatem"
+perfectae_caritatis_URL="http://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651028_perfectae-caritatis"
+christus_dominus_URL="http://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651028_christus-dominus"
+unitatis_redintegratio_URL="http://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19641121_unitatis-redintegratio"
+orientalium_ecclesiarum_URL="http://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19641121_orientalium-ecclesiarum"
+inter_mirifica_URL="http://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19631204_inter-mirifica"
 
 function create_db {
     pwd=`pwd`
@@ -34,7 +41,7 @@ function create_db {
             echo "$lang::$doc::$temp" >> $document
         done
         # Download Decrees
-        for doc in ad_gentes optatam_totius; do
+        for doc in ad_gentes presbyterorum_ordinis apostolicam_actuositatem optatam_totius perfectae_caritatis christus_dominus unitatis_redintegratio orientalium_ecclesiarum inter_mirifica; do
             temp=`cat $doc-$lang.html | tr '\r\n' ' '`
             echo "$lang::$doc::$temp" >> $document
         done
@@ -46,30 +53,23 @@ function download_docs {
     for lang in cs en lt; do
         # Download Consitutions
         for doc in dei_verbum lumen_gentium sacrosanctum_concilium gaudium_et_spes; do
+            echo "Download $doc"
             VAL="`echo $doc`_URL"
             wget -O $doc-$lang.html ${!VAL}_$lang.html
-            if [ $? -eq 0 ]; then
-                temp=`cat $doc-$lang.html | tr '\r\n' ' '` 
-                #echo "$lang::$doc::$temp" >> $document
-            fi
         done
         # Download Declarations
         for doc in gravissimum_educationis nostra_aetate dignitatis_humanae; do
+            echo "Download $doc"
             VAL="`echo $doc`_URL"
             wget -O $doc-$lang.html ${!VAL}_$lang.html
-            if [ $? -eq 0 ]; then
-                temp=`cat $doc-$lang.html | tr '\r\n' ' '` 
-                #echo "$lang::$doc::$temp" >> $document
-            fi
         done
         # Download Decrees
-        for doc in ad_gentes optatam_totius; do
+        for doc in ad_gentes presbyterorum_ordinis apostolicam_actuositatem optatam_totius perfectae_caritatis christus_dominus unitatis_redintegratio orientalium_ecclesiarum inter_mirifica; do
+            echo "Download $doc"
             VAL="`echo $doc`_URL"
+            echo "$VAL"
+            echo "${!VAL}_$lang.html"
             wget -O $doc-$lang.html ${!VAL}_$lang.html
-            if [ $? -eq 0 ]; then
-                temp=`cat $doc-$lang.html | tr '\r\n' ' '` 
-                #echo "$lang::$doc::$temp" >> $document
-            fi
         done
     done
 }
