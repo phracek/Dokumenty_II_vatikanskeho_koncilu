@@ -21,7 +21,14 @@ public class VatConcilDocuments {
     }
     private String capitalize(final String line) {
         String [] text = line.split("_");
-        String first_name = Character.toUpperCase(text[0].charAt(0)) + text[0].substring(1);
-        String second_name = Character.toUpperCase(text[1].charAt(0)) + text[1].substring(1);
-        return first_name + " " + second_name;
+        String res_name = "";
+        int i=0;
+        for (i=0; i<text.length;i++) {
+            if (i==0)
+                res_name += Character.toUpperCase(text[i].charAt(0)) + text[i].substring(1);
+            else
+                res_name += " " + Character.toUpperCase(text[i].charAt(0)) + text[i].substring(1);
+
+        }
+        return res_name;
     }}
