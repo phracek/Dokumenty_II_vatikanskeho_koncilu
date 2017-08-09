@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dokumenty II vatikánského koncilu</string>
+    <string name="dokument_name">Dokument</string>
+    <string name="action_settings">Settings</string>
+</resources>
