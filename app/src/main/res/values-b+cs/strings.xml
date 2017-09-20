@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Dokumenty II vatikánského koncilu</string>
     <string name="dokument_name">Dokument</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Nastavení</string>
     <string name="version_1_0"><b>Verze 1.0:</b><br></br>aplikace je spustitelná na mobilních zařízeních a tabletech s operačním systémem Android v minimální verzi Marshmallow (6.0).<br></br><br></br>Případné chyby, připomínky, nápady či postřehy prosím napiště na adresy <a href="phracek@gmail.com">phracek@gmail.com</a> či <a href="https://github.com/phracek/Dokumenty_II_vatikanskeho_koncilu/issues">https://github.com/phracek/Dokumenty_II_vatikanskeho_koncilu/issues</a></string>
 </resources>

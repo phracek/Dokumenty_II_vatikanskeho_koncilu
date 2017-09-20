@@ -39,8 +39,16 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.
     @Override
     public void onClick(View view) {
         final Intent intent;
-        intent = new Intent(c, DocumentActivity.class);
-        intent.putExtra("Document", document_name);
-        c.startActivity(intent);
+        Log.e("documet", document_name);
+        if (document_name.equals("O aplikaci")) {
+            intent = new Intent(c, AboutApplication.class);
+            intent.putExtra("Document", document_name);
+            c.startActivity(intent);
+        }
+        else {
+            intent = new Intent(c, DocumentActivity.class);
+            intent.putExtra("Document", document_name);
+            c.startActivity(intent);
+        }
     }
 }

@@ -1,5 +1,6 @@
 package phracek.dokumenty_ii_vatikanskeho_koncilu;
 
+import android.content.Intent;
 import android.icu.text.AlphabeticIndex;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         loadDocumentDb();
+        loadOtherItems();
 
         // specify an adapter (see also next example)
         RecyclerViewAdapter mAdapter = new RecyclerViewAdapter(this);
@@ -65,6 +67,18 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+    }
+    protected void showAbout() {
+        // Inflate the about message contents
+        final Intent intent;
+        intent = new Intent(this, AboutApplication.class);
+        this.startActivity(intent);
+
+    }
+    private void loadOtherItems() {
+        String language = "cs";
+        docuDb.addToDb("Nastaveni", language, "None");
+        docuDb.addToDb("O aplikaci", language, "None");
     }
     public static class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         private String[] mDataset;
