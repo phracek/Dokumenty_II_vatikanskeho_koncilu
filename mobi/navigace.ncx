@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+	"http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+
+<!--
+	For a detailed description of NCX usage please refer to:
+	http://www.idpf.org/2007/opf/OPF_2.0_final_spec.html#Section2.4.1
+-->
+
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en-US">
+<head>
+<meta name="dtb:uid" content="BookId"/>
+<meta name="dtb:depth" content="2"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle><text>Dokumenty II vatikánského koncilu</text></docTitle>
+<docAuthor><text>Petr Hráček</text></docAuthor>
+  <navMap>
+    <navPoint class="toc" id="toc" playOrder="1">
+      <navLabel>
+        <text>Obsah</text>
+      </navLabel>
+      <content src="toc.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_1" playOrder="2">
+      <navLabel>
+        <text>Dei Verbum</text>
+      </navLabel>
+      <content src="../docs/dei_verbum-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_2" playOrder="3">
+      <navLabel>
+        <text>Lumen Gentium</text>
+      </navLabel>
+      <content src="../docs/lumen_gentium-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_3" playOrder="4">
+      <navLabel>
+        <text>Sacrosanctum Concilium</text>
+      </navLabel>
+      <content src="../docs/sacrosanctum_concilium-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_4" playOrder="5">
+      <navLabel>
+        <text>Gaudium et Spes</text>
+      </navLabel>
+      <content src="../docs/gaudium_et_spes-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_5" playOrder="6">
+      <navLabel>
+        <text>Gravissimum Educationis</text>
+      </navLabel>
+      <content src="../docs/gravissimum_educationis-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_6" playOrder="7">
+      <navLabel>
+        <text>Nostra Aetate</text>
+      </navLabel>
+      <content src="../docs/nostra_aetate-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_7" playOrder="8">
+      <navLabel>
+        <text>Dignitatis Humanae</text>
+      </navLabel>
+      <content src="../docs/dignitatis_humanae-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_8" playOrder="9">
+      <navLabel>
+        <text>Ad Gentes</text>
+      </navLabel>
+      <content src="../docs/ad_gentes-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_9" playOrder="10">
+      <navLabel>
+        <text>Presbyterorum Ordinis</text>
+      </navLabel>
+      <content src="../docs/presbyterorum_ordinis-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_10" playOrder="11">
+      <navLabel>
+        <text>Apostolicam Actuositatem</text>
+      </navLabel>
+      <content src="../docs/apostolicam_actuositatem-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_11" playOrder="12">
+      <navLabel>
+        <text>Optatam Totius</text>
+      </navLabel>
+      <content src="../docs/optatam_totius-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_12" playOrder="13">
+      <navLabel>
+        <text>Perfectae Caritatis</text>
+      </navLabel>
+      <content src="../docs/perfectae_caritatis-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_13" playOrder="14">
+      <navLabel>
+        <text>Christus Dominus</text>
+      </navLabel>
+      <content src="../docs/christus_dominus-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_14" playOrder="15">
+      <navLabel>
+        <text>Unitatis Redintegratio</text>
+      </navLabel>
+      <content src="../docs/unitatis_redintegratio-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_15" playOrder="16">
+      <navLabel>
+        <text>Orientalium Ecclesiarum</text>
+      </navLabel>
+      <content src="../docs/orientalium_ecclesiarum-cs.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="chapter_16" playOrder="17">
+      <navLabel>
+        <text>Inter Mirifica</text>
+      </navLabel>
+      <content src="../docs/inter_mirifica-cs.html"/>
+    </navPoint>
+  </navMap>
+</ncx>
