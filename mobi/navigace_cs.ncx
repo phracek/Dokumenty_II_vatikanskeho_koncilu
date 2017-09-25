@@ -21,7 +21,7 @@
       <navLabel>
         <text>Obsah</text>
       </navLabel>
-      <content src="toc.html"/>
+      <content src="toc_cs.html"/>
     </navPoint>
     <navPoint class="chapter" id="chapter_1" playOrder="2">
       <navLabel>
