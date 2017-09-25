@@ -30,7 +30,7 @@
     <item id="unitatis_redintegratio" media-type="application/xhtml+xml" href="../docs/unitatis_redintegratio-cs.html"></item>
     <item id="orientalium_ecclesiarum" media-type="application/xhtml+xml" href="../docs/orientalium_ecclesiarum-cs.html"></item>
     <item id="inter_mirifica" media-type="application/xhtml+xml" href="../docs/inter_mirifica-cs.html"></item>
-    <item id="toc" media-type="application/xhtml+xml" href="toc.html"></item>
+    <item id="toc" media-type="application/xhtml+xml" href="toc_cs.html"></item>
 
   <!-- table of contents [mandatory] -->
   <item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="navigace_cs.ncx"/>

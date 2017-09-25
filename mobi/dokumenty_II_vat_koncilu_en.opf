@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="BookId">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+
+    <dc:title>Dokumenty II vatikánského koncilu</dc:title>
+    <dc:language>cs</dc:language>
+    <meta name="cover" content="My_Cover" />
+    <dc:identifier id="BookId" opf:scheme="ISBN"></dc:identifier>
+    <dc:creator>Petr Hráček</dc:creator>
+    <dc:publisher>Petr Hráček</dc:publisher>
+    <dc:subject>Kniha</dc:subject>
+    <dc:date></dc:date>
+  <dc:description>DOCUMENTS OF THE SECOND VATICAN COUNCIL</dc:description>
+</metadata>
+<manifest>
+  <!-- HTML content files [mandatory] -->
+    <item id="dei_verbum" media-type="application/xhtml+xml" href="../docs/dei_verbum-en.html"></item>
+    <item id="lumen_gentium" media-type="application/xhtml+xml" href="../docs/lumen_gentium-en.html"></item>
+    <item id="sacrosanctum_concilium" media-type="application/xhtml+xml" href="../docs/sacrosanctum_concilium-en.html"></item>
+    <item id="gaudium_et_spes" media-type="application/xhtml+xml" href="../docs/gaudium_et_spes-en.html"></item>
+    <item id="gravissimum_educationis" media-type="application/xhtml+xml" href="../docs/gravissimum_educationis-en.html"></item>
+    <item id="nostra_aetate" media-type="application/xhtml+xml" href="../docs/nostra_aetate-en.html"></item>
+    <item id="dignitatis_humanae" media-type="application/xhtml+xml" href="../docs/dignitatis_humanae-en.html"></item>
+    <item id="ad_gentes" media-type="application/xhtml+xml" href="../docs/ad_gentes-en.html"></item>
+    <item id="presbyterorum_ordinis" media-type="application/xhtml+xml" href="../docs/presbyterorum_ordinis-en.html"></item>
+    <item id="apostolicam_actuositatem" media-type="application/xhtml+xml" href="../docs/apostolicam_actuositatem-en.html"></item>
+    <item id="optatam_totius" media-type="application/xhtml+xml" href="../docs/optatam_totius-en.html"></item>
+    <item id="perfectae_caritatis" media-type="application/xhtml+xml" href="../docs/perfectae_caritatis-en.html"></item>
+    <item id="christus_dominus" media-type="application/xhtml+xml" href="../docs/christus_dominus-en.html"></item>
+    <item id="unitatis_redintegratio" media-type="application/xhtml+xml" href="../docs/unitatis_redintegratio-en.html"></item>
+    <item id="orientalium_ecclesiarum" media-type="application/xhtml+xml" href="../docs/orientalium_ecclesiarum-en.html"></item>
+    <item id="inter_mirifica" media-type="application/xhtml+xml" href="../docs/inter_mirifica-en.html"></item>
+    <item id="toc" media-type="application/xhtml+xml" href="toc_en.html"></item>
+
+  <!-- table of contents [mandatory] -->
+  <item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="navigace_en.ncx"/>
+
+</manifest>
+<spine toc="My_Table_of_Contents">
+  <!-- the spine defines the linear reading order of the book -->
+    <itemref idref="toc"/>
+    <itemref idref="dei_verbum"/>
+    <itemref idref="lumen_gentium"/>
+    <itemref idref="sacrosanctum_concilium"/>
+    <itemref idref="gaudium_et_spes"/>
+    <itemref idref="gravissimum_educationis"/>
+    <itemref idref="nostra_aetate"/>
+    <itemref idref="dignitatis_humanae"/>
+    <itemref idref="ad_gentes"/>
+    <itemref idref="presbyterorum_ordinis"/>
+    <itemref idref="apostolicam_actuositatem"/>
+    <itemref idref="optatam_totius"/>
+    <itemref idref="perfectae_caritatis"/>
+    <itemref idref="christus_dominus"/>
+    <itemref idref="unitatis_redintegratio"/>
+    <itemref idref="orientalium_ecclesiarum"/>
+    <itemref idref="inter_mirifica"/>
+</spine>
+<guide>
+    <reference type="toc" title="Table of Contents" href="toc_en.html"></reference>
+</guide>
+</package>
